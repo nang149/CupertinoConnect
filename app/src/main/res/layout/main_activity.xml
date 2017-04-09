@@ -4,6 +4,16 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
+    <activity android:name="com.example.prathabodas.cupertinoconnect.MainActivity"
+        android:label="@string/CupertinoConnect"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+
     <Button
         android:id="@+id/go"
         android:layout_width="102dp"
@@ -22,15 +32,5 @@
         android:text="Enter Your Name..."
         android:layout_above="@+id/go"
         android:layout_centerHorizontal="true" />
-
-    <activity android:name="com.your.package.name.MainActivity"
-        android:label="@string/app_name"
-        xmlns:android="http://schemas.android.com/apk/res/android">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
 
 </RelativeLayout>
